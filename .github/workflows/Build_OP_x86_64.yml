@@ -62,8 +62,7 @@ jobs:
         
     - name: 自定义插件主题
       run: |
-        git clone https://github.com/Lienol/openwrt-package
-      working-directory: ./openwrt
+        git clone https://github.com/Lienol/openwrt-package/tree/master/lienol/luci-app-passwall
         ./scripts/feeds update -a
         ./scripts/feeds install -a
         
