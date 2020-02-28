@@ -62,7 +62,8 @@ jobs:
         
     - name: 自定义插件主题
       run: |
-        git clone https://github.com/Lienol/openwrt-package.git
+        git clone https://github.com/Lienol/openwrt-package
+      working-directory: ./openwrt
         ./scripts/feeds update -a
         ./scripts/feeds install -a
         
