@@ -21,9 +21,12 @@ on:
   
   #watch:
   #  types: [started]
-    git clone https://github.com/Lienol/openwrt-package.git
-     ./scripts/feeds update -a
-     ./scripts/feeds install -a
+- name: 自定义插件主题
+        run: |
+          cd package
+          mkdir openwrt-packages
+          cd openwrt-packages
+          git clone https://github.com/Lienol/openwrt-package.git
     
     
 jobs:
