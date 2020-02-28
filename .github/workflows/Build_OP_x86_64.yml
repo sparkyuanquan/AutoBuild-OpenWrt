@@ -21,7 +21,11 @@ on:
   
   #watch:
   #  types: [started]
-
+    git clone https://github.com/Lienol/openwrt-package.git
+ ./scripts/feeds update -a
+ ./scripts/feeds install -a
+    
+    
 jobs:
   build:
     runs-on: ubuntu-latest
